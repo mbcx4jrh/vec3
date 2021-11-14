@@ -17,6 +17,7 @@ func DistanceSquared(a, b Vector3) float64
 func Add(a, b Vector3) Vector3  
 func Subtract(a, b Vector3) Vector3  
 func Mult(a Vector3, b float64) Vector3  
+func Div(a Vector3, b float64) Vector3  
 func Normalize(a Vector3) Vector3  
 func Dot(a, b Vector3) float64  
 func Cross(a, b Vector3) Vector3  

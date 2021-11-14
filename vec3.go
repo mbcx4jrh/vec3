@@ -17,9 +17,14 @@ func Subtract(a, b Vector3) Vector3 {
 	return Vector3{a.X - b.X, a.Y - b.Y, a.Z - b.Z}
 }
 
-// Mult -iply a Vector
+// Multiply a Vector
 func Mult(a Vector3, b float64) Vector3 {
 	return Vector3{a.X * b, a.Y * b, a.Z * b}
+}
+
+//  Divide a Vector
+func Div(a Vector3, b float64) Vector3 {
+	return Vector3{a.X / b, a.Y / b, a.Z / b}
 }
 
 // Length of a Vector3
