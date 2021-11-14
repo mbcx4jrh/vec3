@@ -17,6 +17,8 @@ func DistanceSquared(a, b Vector3) float32
 func Add(a, b Vector3) Vector3  
 func Mult(a Vector3, b float32) Vector3  
 func Normalize(a Vector3) Vector3  
+func Dot(a, b Vector3) float32
+func Cross(a, b Vector3) Vector3
 func (a Vector3) Length() float32  
 
 ## Usage example
