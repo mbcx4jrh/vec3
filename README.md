@@ -21,6 +21,7 @@ func Normalize(a Vector3) Vector3
 func Dot(a, b Vector3) float32  
 func Cross(a, b Vector3) Vector3  
 func (a Vector3) Length() float32  
+func (a Vector3) LengthSqr() float32
 
 ## Usage example
 

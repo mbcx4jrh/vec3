@@ -27,6 +27,11 @@ func (a Vector3) Length() float32 {
 	return float32(math.Sqrt(float64(a.X*a.X + a.Y*a.Y + a.Z*a.Z)))
 }
 
+// Length aquared of a Vector3
+func (a Vector3) LengthSqr() float32 {
+	return a.X*a.X + a.Y*a.Y + a.Z*a.Z
+}
+
 // Distance of a Vector3
 func Distance(a, b Vector3) float32 {
 	xDiff := a.X - b.X
