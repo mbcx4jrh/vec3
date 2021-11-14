@@ -43,3 +43,16 @@ func Normalize(a Vector3) Vector3 {
 	len := a.Length()
 	return Vector3{a.X / len, a.Y / len, a.Z / len}
 }
+
+// Dot product of two vectors
+func Dot(a, b Vector3) float32 {
+	return a.X*b.X + a.Y*b.Y + a.Z*b.Z
+}
+
+// Cross product of two vectors
+func Cross(a, b Vector3) Vector3 {
+	i := a.Y*b.Z - a.Z*b.Y
+	j := a.Z*b.X - a.X*b.Z
+	k := a.X*b.Y - a.Y*b.X
+	return Vector3{i, j, k}
+}

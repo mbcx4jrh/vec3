@@ -4,11 +4,11 @@
   <img style="float: right;" src="assets/vec3.png" alt="vec3 gopher"/>
 </p>
 
-Simple Golang vector3 library, basically the same as the one presented on [Games With Go](https://gameswithgo.org) [episode 13](https://www.youtube.com/watch?v=SjqXBrGpRM8).
+forked from shindakun to add extra funcs
 
 ## Installation
 
-If you are a Go user you can run `go install github.com/shindakun/vec3`.
+If you are a Go user you can run `go install github.com/mbcx4jrh/vec3`.
 
 ## Functions
 
