@@ -4,7 +4,7 @@ import "math"
 
 // Vector3 struct
 type Vector3 struct {
-	X, Y, Z float32
+	X, Y, Z float64
 }
 
 // Add two Vector3's together
@@ -18,30 +18,30 @@ func Subtract(a, b Vector3) Vector3 {
 }
 
 // Mult -iply a Vector
-func Mult(a Vector3, b float32) Vector3 {
+func Mult(a Vector3, b float64) Vector3 {
 	return Vector3{a.X * b, a.Y * b, a.Z * b}
 }
 
 // Length of a Vector3
-func (a Vector3) Length() float32 {
-	return float32(math.Sqrt(float64(a.X*a.X + a.Y*a.Y + a.Z*a.Z)))
+func (a Vector3) Length() float64 {
+	return float64(math.Sqrt(float64(a.X*a.X + a.Y*a.Y + a.Z*a.Z)))
 }
 
 // Length aquared of a Vector3
-func (a Vector3) LengthSqr() float32 {
+func (a Vector3) LengthSqr() float64 {
 	return a.X*a.X + a.Y*a.Y + a.Z*a.Z
 }
 
 // Distance of a Vector3
-func Distance(a, b Vector3) float32 {
+func Distance(a, b Vector3) float64 {
 	xDiff := a.X - b.X
 	yDiff := b.Y - b.Y
 	zDiff := a.Z - b.Z
-	return float32(math.Sqrt(float64(xDiff*xDiff + yDiff*yDiff + zDiff*zDiff)))
+	return math.Sqrt(xDiff*xDiff + yDiff*yDiff + zDiff*zDiff)
 }
 
 // DistanceSquared of a Vector3
-func DistanceSquared(a, b Vector3) float32 {
+func DistanceSquared(a, b Vector3) float64 {
 	xDiff := a.X - b.X
 	yDiff := b.Y - b.Y
 	zDiff := a.Z - b.Z
@@ -55,7 +55,7 @@ func Normalize(a Vector3) Vector3 {
 }
 
 // Dot product of two vectors
-func Dot(a, b Vector3) float32 {
+func Dot(a, b Vector3) float64 {
 	return a.X*b.X + a.Y*b.Y + a.Z*b.Z
 }
 
