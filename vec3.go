@@ -56,3 +56,8 @@ func Cross(a, b Vector3) Vector3 {
 	k := a.X*b.Y - a.Y*b.X
 	return Vector3{i, j, k}
 }
+
+// Provide zero vector
+func Zero() Vector3 {
+	return Vector3{0, 0, 0}
+}
