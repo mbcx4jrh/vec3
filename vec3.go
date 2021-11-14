@@ -12,6 +12,11 @@ func Add(a, b Vector3) Vector3 {
 	return Vector3{a.X + b.X, a.Y + b.Y, a.Z + b.Z}
 }
 
+// Subtract two vectors
+func Subtract(a, b Vector3) Vector3 {
+	return Vector3{a.X - b.X, a.Y - b.Y, a.Z - b.Z}
+}
+
 // Mult -iply a Vector
 func Mult(a Vector3, b float32) Vector3 {
 	return Vector3{a.X * b, a.Y * b, a.Z * b}
