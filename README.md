@@ -12,6 +12,7 @@ If you are a Go user you can run `go install github.com/mbcx4jrh/vec3`.
 
 ## Functions
 
+func New(x, y, z float64) Vector3
 func Distance(a, b Vector3) float64  
 func DistanceSquared(a, b Vector3) float64  
 func Add(a, b Vector3) Vector3  
@@ -30,7 +31,8 @@ The following code
 
 ```go
 v1 := vec3.Vector3{X: 1, Y: 1, Z: 0}
-v2 := vec3.Vector3{X: 1, Y: 1, Z: 0}
+//or
+v2 := vec3.New(1, 1, 0)
 newV := vec3.Add(v1, v2)
 fmt.Println(newV)
 ```

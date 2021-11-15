@@ -76,3 +76,9 @@ func Cross(a, b Vector3) Vector3 {
 func Zero() Vector3 {
 	return Vector3{0, 0, 0}
 }
+
+// Create new vector3
+
+func New(x, y, z float64) Vector3 {
+	return Vector3{x, y, z}
+}
