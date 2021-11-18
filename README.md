@@ -12,7 +12,7 @@ If you are a Go user you can run `go install github.com/mbcx4jrh/vec3`.
 
 ## Functions
 
-func New(x, y, z float64) Vector3 
+func New(x, y, z float64) Vector3   
 func Distance(a, b Vector3) float64  
 func DistanceSquared(a, b Vector3) float64  
 func Add(a, b Vector3) Vector3  
